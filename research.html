@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research — AISI Lab</title>
+  <meta name="description" content="Research at the AISI Lab: predictive AI for precision immunotherapy, systems immunology of resistance mechanisms, and the eOncoImmune Digital Twin Platform."/>
+  <link rel="icon" href="images/logos/logo-mark.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- nav injected by components.js -->
+
+<section class="page-hero">
+  <div class="section-inner">
+    <span class="section-label reveal">Mission &amp; Research</span>
+    <h1 class="page-title reveal">Research at AISI Lab</h1>
+    <p class="page-subtitle reveal">
+      We study why cancer immunotherapy works for some patients but fails—or causes harm—for many others, and how we can change that. Our work spans three connected directions that together link patient outcome prediction, mechanistic understanding, and rational therapy design.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+
+    <!-- Vision statement -->
+    <div class="reveal" style="max-width:none; margin-bottom:3.5rem; padding:2rem 2.2rem; background:var(--color-bg-card); border:1px solid var(--color-border); border-radius:var(--radius-lg); border-left:3px solid var(--color-gold);">
+      <p style="font-size:.97rem; color:var(--color-text-muted); line-height:1.9; margin-bottom:.8rem;">
+        We are an interdisciplinary group at the interface of <strong style="color:var(--color-text);">clinical oncology</strong>, <strong style="color:var(--color-text);">immunology</strong>, and <strong style="color:var(--color-text);">computation</strong>. Our goal is to make immunotherapy more
+        <span class="text-gold">predictive</span>, <span class="text-gold">equitable</span>, and <span class="text-gold">programmable</span>,
+        so that treatment decisions and new therapies are guided by mechanism and data rather than trial-and-error.
+      </p>
+      <p style="font-size:.97rem; color:var(--color-text-muted); line-height:1.9; margin:0;">
+        Our work is clinically motivated and translational by design. We collaborate closely with clinicians, experimental scientists, and patients, and we are committed to <em>open, collaborative, and reproducible science</em>.
+      </p>
+    </div>
+
+    <!-- Direction 1 -->
+    <div class="direction-row reveal">
+      <div class="direction-content">
+        <span class="direction-kicker">Direction 01</span>
+        <h3>Predictive AI for Precision Immunotherapy</h3>
+        <p class="direction-sub">From Data Integration to Clinical Decision Support</p>
+
+        <p>
+          Immunotherapy has transformed cancer care, yet most patients fail to benefit, and a subset experience severe, sometimes life-threatening toxicities. A central focus of the AISI Lab is to predict—before treatment begins—who will respond, who will not, and who is at risk of adverse events.
+        </p>
+
+        <div class="mini-card">
+          <strong style="color:var(--color-text); display:block; margin-bottom:.5rem;">What we care about</strong>
+          <ul>
+            <li><strong style="color:var(--color-text);">Democratizing precision medicine:</strong> Developing AI models that leverage routinely collected clinical data—hematological indices, EHRs, and standard pathology—to predict immunotherapy response, prioritizing low-cost and non-invasive features for broad accessibility.</li>
+            <li style="margin-top:.4rem;"><strong style="color:var(--color-text);">Achieving accuracy with understanding:</strong> Building interpretable frameworks that integrate electronic health records, medical imaging, and multi-omics data to capture host–tumor interactions, enabling both accurate prediction and mechanistic insight.</li>
+          </ul>
+        </div>
+
+        <p style="margin-top:.9rem; margin-bottom:0;">
+          We collaborate with clinicians and patients to validate these models in real-world and prospective studies, translating computational biomarkers into practical clinical tools.
+        </p>
+
+        <div class="figure-card">
+          <img src="images/illustrations/Direction1.jpg" alt="Predictive AI for immunotherapy — model diagram">
+        </div>
+
+        <div class="rep-work">
+          <strong class="rep-title">Representative work</strong>
+          <ul class="paper-list">
+            <li><a href="https://www.nature.com/articles/s43018-024-00772-7" target="_blank" rel="noopener">Chang T.-G. et al. <em>Nature Cancer</em> (2024) — LORIS predictor</a></li>
+            <li><a href="https://www.annalsofoncology.org/article/S0923-7534(24)04914-7/abstract" target="_blank" rel="noopener">Chang T.-G. et al. <em>Annals of Oncology</em> (2025) — B cell biomarkers</a></li>
+            <li><a href="https://www.nature.com/articles/s43018-025-00917-2" target="_blank" rel="noopener">Chang T.-G. et al. <em>Nature Cancer</em> (2025) — Hallmarks of AI in oncology</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direction 2 -->
+    <div class="direction-row reveal">
+      <div class="direction-content">
+        <span class="direction-kicker">Direction 02</span>
+        <h3>Systems Immunology of Resistance Mechanisms</h3>
+        <p class="direction-sub">From Correlation to Causal Inference</p>
+
+        <p>
+          Prediction alone is not enough. To help patients who do not respond to current therapies, we seek to understand <strong>why immunotherapy fails</strong> and how resistance emerges.
+        </p>
+
+        <p>
+          We use single-cell and spatial profiling to map immune and tumor states, their interactions, and how they are organized inside tumors. By integrating these data with computational and systems biology, we identify reversible resistance mechanisms — such as hypoxia-induced neutrophil reprogramming or translational dysregulation — that can be therapeutically targeted to re-sensitize immunologically "cold" tumors.
+        </p>
+
+        <div class="mini-card">
+          <strong style="color:var(--color-text); display:block; margin-bottom:.4rem;">What we map</strong>
+          <ul>
+            <li><strong style="color:var(--color-text);">Cellular states and transitions:</strong> Defining cell states, lineage relationships, and state plasticity.</li>
+            <li style="margin-top:.4rem;"><strong style="color:var(--color-text);">Metabolic and signaling constraints:</strong> Characterizing metabolic stress and intercellular communication that drive immune suppression.</li>
+            <li style="margin-top:.4rem;"><strong style="color:var(--color-text);">Spatial organization:</strong> Resolving tissue architecture and immune niches associated with response or resistance.</li>
+            <li style="margin-top:.4rem;"><strong style="color:var(--color-text);">Therapeutic vulnerabilities:</strong> Identifying actionable targets for next-generation immunotherapy.</li>
+          </ul>
+        </div>
+
+        <div class="figure-card">
+          <img src="images/illustrations/Direction2.jpg" alt="Single-cell and spatial profiling of tumor-immune interactions">
+        </div>
+
+        <div class="rep-work">
+          <strong class="rep-title">Representative work</strong>
+          <ul class="paper-list">
+            <li><a href="https://www.science.org/doi/10.1126/sciimmunol.adz2273" target="_blank" rel="noopener">Chang T.-G. et al. <em>Science Immunology</em> (2025) — Hypoxia &amp; EGR1 in neutrophils</a></li>
+            <li><a href="https://www.cell.com/cancer-cell/fulltext/S1535-6108(25)00082-0" target="_blank" rel="noopener">Weller C. et al. <em>Cancer Cell</em> (2025) — Translation dysregulation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direction 3 -->
+    <div class="direction-row reveal">
+      <div class="direction-content">
+        <span class="direction-kicker">Direction 03</span>
+        <h3>The eOncoImmune Digital Twin Platform</h3>
+        <p class="direction-sub">From Mechanistic Understanding to Rational Design</p>
+
+        <p>
+          Our long-term vision is to transform immunotherapy from empirical intervention into a <strong>model-guided, rational design paradigm</strong>.
+        </p>
+
+        <p>
+          We are building toward an eOncoImmune digital twin: a multi-scale framework that integrates biological knowledge and patient-specific data to simulate tumor–immune dynamics and therapeutic response. This integrative effort connects prediction, mechanism, and intervention into a coherent translational framework.
+        </p>
+
+        <div class="mini-card">
+        <strong style="color:var(--color-text); display:block; margin-bottom:.4rem;">What we enable</strong>
+          <ul>
+            <li><strong style="color:var(--color-text);">In silico tumor–immune dynamics:</strong> Simulating tumor–immune co-evolution within mechanistic models.</li>
+            <li style="margin-top:.4rem;"><strong style="color:var(--color-text);">Virtual clinical trials:</strong> Enabling hypothesis generation and therapy evaluation prior to clinical testing.</li>
+            <li style="margin-top:.4rem;"><strong style="color:var(--color-text);">Rational therapy design:</strong> Guiding the development of immunotherapies through quantitative modeling and biological mechanism.</li>
+          </ul>
+        </div>
+
+        <div class="figure-card">
+          <img src="images/illustrations/Direction3.jpg" alt="Digital twin platform for immunotherapy design">
+        </div>
+
+        <div class="rep-work">
+          <strong class="rep-title">Representative work</strong>
+          <ul class="paper-list">
+            <li><a href="https://doi.org/10.1101/2025.03.19.644074" target="_blank" rel="noopener">Madan S. &amp; Chang T.-G. et al. <em>bioRxiv</em> (2025) — Logic-gated CAR therapy design</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-row reveal" style="margin-top:2.5rem; justify-content:center;">
+      <a href="publications.html" class="btn btn-outline">View All Publications</a>
+      <a href="hiring.html" class="btn btn-primary">Join the AISI Lab</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- footer injected by components.js -->
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
