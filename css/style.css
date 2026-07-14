@@ -1022,51 +1022,126 @@ html[data-theme="light"] .pub-links a:hover { color: var(--color-gold); border-c
 }
 .pub-note a { font-size: .8rem; }
 
+
+/* Automatic publication numbering */
+.section-inner {
+  counter-reset: publication;
+}
+
+.pub-card {
+  counter-increment: publication;
+}
+
+.pub-num::before {
+  content: counter(publication);
+}
+
 /* ============================================================
    TEAM PAGE
    ============================================================ */
 .team-grid {
   display: grid; grid-template-columns: repeat(12,1fr); gap: 1.2rem;
 }
-.profile-card {
+.member-card {
   grid-column: span 6;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   background: var(--color-bg-card);
   padding: 1.6rem;
-  display: flex; gap: 1.4rem; align-items: flex-start;
-  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
-}
-.profile-card:hover { border-color: var(--color-border-glow); transform: translateY(-3px); box-shadow: 0 16px 48px var(--color-shadow); }
-.profile-card.pi-card { grid-column: span 12; background: linear-gradient(145deg, var(--color-bg-card), rgba(201,168,76,.04)); }
 
-.profile-photo {
-  width: 100px; height: 100px; flex-shrink: 0;
-  border-radius: 14px; overflow: hidden;
+  display: flex;
+  gap: 1.4rem;
+  align-items: flex-start;
+
+  transition:
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.member-card:hover {
+  border-color: var(--color-border-glow);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 48px var(--color-shadow);
+}
+
+.member-photo {
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+
+  border-radius: 14px;
+  overflow: hidden;
   border: 1px solid var(--color-border);
-  background: rgba(255,255,255,.03);
-  display: grid; place-items: center;
-}
-.profile-card.pi-card .profile-photo { width: 130px; height: 130px; }
-.profile-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.initials {
-  font-family: var(--font-mono); font-size: 1rem;
-  color: var(--color-gold-light); opacity: .85;
-}
-.profile-meta { flex: 1; }
-.profile-meta h3 { font-size: 1rem; margin-bottom: .18rem; }
-.profile-meta .role { font-size: .78rem; color: var(--color-gold-light); margin-bottom: .6rem; display: block; }
-html[data-theme="light"] .profile-meta .role { color: var(--color-gold); }
-.profile-meta p { font-size: .85rem; color: var(--color-text-muted); margin-bottom: .65rem; line-height: 1.65; }
-.profile-links { display: flex; flex-wrap: wrap; gap: .5rem .8rem; }
-.profile-links a { font-size: .8rem; color: var(--color-text-muted); transition: color var(--transition); }
-.profile-links a:hover { color: var(--color-gold-light); }
-html[data-theme="light"] .profile-links a:hover { color: var(--color-gold); }
+  background: rgba(255, 255, 255, 0.03);
 
-/* Open position cards - lighter style */
-.profile-card.open { border-style: dashed; opacity: .75; }
-.profile-card.open:hover { opacity: 1; }
+  display: grid;
+  place-items: center;
+}
 
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.member-initials {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--color-gold-light);
+  opacity: 0.85;
+}
+
+.member-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.member-meta h3 {
+  font-size: 1rem;
+  margin-bottom: 0.18rem;
+}
+
+.member-meta .role {
+  display: block;
+  margin-bottom: 0.6rem;
+
+  font-size: 0.78rem;
+  color: var(--color-gold-light);
+}
+
+html[data-theme="light"] .member-meta .role {
+  color: var(--color-gold);
+}
+
+.member-meta p {
+  margin-bottom: 0.65rem;
+
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+}
+
+.member-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.8rem;
+}
+
+.member-links a {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+.member-links a:hover {
+  color: var(--color-gold-light);
+}
+
+html[data-theme="light"] .member-links a:hover {
+  color: var(--color-gold);
+}
 /* ============================================================
    HIRING PAGE
    ============================================================ */
