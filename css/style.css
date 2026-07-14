@@ -258,7 +258,7 @@ section {
   border-radius: 999px;
   padding: 0.7rem 1.4rem;
 
-  box-shadow: 
+  box-shadow:
     0 6px 28px rgba(201,168,76,0.35),
     0 0 0 rgba(201,168,76,0.0);
 
@@ -276,7 +276,7 @@ section {
 /* hover interaction */
 .btn-primary:hover {
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 
+  box-shadow:
     0 10px 36px rgba(201,168,76,0.45),
     0 0 12px rgba(201,168,76,0.25);
 }
@@ -1145,6 +1145,30 @@ html[data-theme="light"] .apply-email { color: var(--color-gold); }
   font-family: var(--font-mono); font-size: .66rem;
   color: var(--color-teal); letter-spacing: .12em; text-transform: uppercase;
   border: 1px solid rgba(95,184,176,.3); padding: .2rem .55rem; border-radius: 4px;
+}
+
+.news-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.news-list p {
+    margin: 0;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    line-height: 1.7;
+    color: var(--color-text);
+}
+
+.news-list p:last-child {
+    border-bottom: none;
+}
+
+.news-list strong {
+    display: inline-block;
+    width: 110px;
+    color: var(--color-gold-light);
+    font-family: var(--font-mono);
 }
 
 /* ============================================================
